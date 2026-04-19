@@ -158,23 +158,24 @@ async function createInitialHelpMenu(client) {
     );
 
     embed.setFooter({ 
-        text: "Made with ❤️" 
+        text: "powered shady.py" 
     });
     embed.setTimestamp();
 
     const bugReportButton = new ButtonBuilder()
         .setCustomId(BUG_REPORT_BUTTON_ID)
         .setLabel("Report Bug")
-        .setStyle(ButtonStyle.Danger);
+        .setURL("https://discord.com/channels/1334213209799921746/1495508907429462057")
+        .setStyle(ButtonStyle.link);
 
     const supportButton = new ButtonBuilder()
         .setLabel("Support Server")
-        .setURL("https://discord.gg/QnWNz2dKCE")
+        .setURL("https://discord.gg/7jHMJVPupX")
         .setStyle(ButtonStyle.Link);
 
     const touchpointButton = new ButtonBuilder()
-        .setLabel("Learn from Touchpoint")
-        .setURL("https://www.youtube.com/@TouchDisc")
+        .setLabel("Learn from shady")
+        .setURL("https://discord.com/channels/1334213209799921746/1483358902182608946")
         .setStyle(ButtonStyle.Link);
 
     const selectRow = createSelectMenu(

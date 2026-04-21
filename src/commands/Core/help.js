@@ -165,7 +165,8 @@ async function createInitialHelpMenu(client) {
     const bugReportButton = new ButtonBuilder()
         .setCustomId(BUG_REPORT_BUTTON_ID)
         .setLabel("Report Bug")
-        .setStyle(ButtonStyle.danger);
+        .setURL("https://discord.com/channels/1334213209799921746/1495508907429462057")
+        .setStyle(ButtonStyle.Link);
 
     const supportButton = new ButtonBuilder()
         .setLabel("Support Server")

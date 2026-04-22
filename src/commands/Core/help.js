@@ -197,7 +197,7 @@ async function createInitialHelpMenu(client) {
 
 export default {
     data: new SlashCommandBuilder()
-        .setName("help")
+        .setName("Help")
         .setDescription("Displays the help menu with all available commands"),
 
     async execute(interaction, guildConfig, client) {

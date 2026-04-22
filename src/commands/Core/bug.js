@@ -5,24 +5,24 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 export default {
     data: new SlashCommandBuilder()
         .setName("bug")
-        .setDescription("Report a bug or issue with the bot"),
+        .setDescription("issue with the bot"),
 
     async execute(interaction) {
         const githubButton = new ButtonBuilder()
-            .setLabel('?? Report Bug on GitHub')
+            .setLabel('?? Report')
             .setStyle(ButtonStyle.Link)
-            .setURL('https://github.com/codebymitch/TitanBot/issues');
+            .setURL('https://discord.com/channels/1334213209799921746/1495508907429462057');
 
         const row = new ActionRowBuilder().addComponents(githubButton);
 
         const bugReportEmbed = createEmbed({
             title: '?? Bug Report',
-            description: 'Found a bug? Please report it on our GitHub Issues page!\n\n' +
+            description: 'Found a bug? Please report it on our ssupport threads!\n\n' +
             '**When reporting a bug, please include:**\n' +
-            '• ?? Detailed description of the issue\n' +
-            '• ?? Steps to reproduce the problem\n' +
-            '• ?? Screenshots if applicable\n' +
-            '• ?? Your bot version and environment\n\n' +
+            'â€¢ ?? Detailed description of the issue\n' +
+            'â€¢ ?? Steps to reproduce the problem\n' +
+            'â€¢ ?? Screenshots if applicable\n' +
+            'â€¢ ?? Your bot version and environment\n\n' +
             'This helps us fix issues faster and more effectively!',
             color: 'error'
         })
